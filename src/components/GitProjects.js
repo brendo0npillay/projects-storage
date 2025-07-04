@@ -38,12 +38,20 @@ export default function GitProjects() {
       description:
         "A tool using the GitHub API to fetch pull requests from a specific repo based on owner, repo name, and date range. Jasmine tests verify the retrieval and filtering functions.",
       link: "https://github.com/brendo0npillay/consume-github-api",
-    }
+    },
+    {
+      name: "AI ChatBot",
+      description:
+        "A responsive web app that lets users chat with an AI using Groq's API. Features clean UI, real-time responses, and simple JavaScript integration for smooth API communication.",
+      link: "https://github.com/brendo0npillay/ai-chat"
+      },
   ];
   return (
     <div className="projectContainer">
       <h3>Github Projects</h3>
-      <p>A list of projects that do not have viewable site but have a repository</p>
+      <p>
+        A list of projects that do not have viewable site but have a repository
+      </p>
       <div className="cardContainer">
         {projects.map((item) => (
           <Card style={{ width: "18rem" }}>
