@@ -4,6 +4,7 @@ import weather from "../assets/weather.png";
 import memory from "../assets/memory.png";
 import portfolio from "../assets/portfolio.png";
 import restaurant from "../assets/restaurant.jpg";
+import holder from "../assets/placeholder.svg";
 
 export default function Projects() {
   const projects = [
@@ -47,6 +48,14 @@ export default function Projects() {
       link: "https://kitch3n.great-site.net/?i=2",
       img: restaurant,
     },
+    {
+      name: "Planet Viewer",
+      description:
+        "A dynamic 3D planet viewer built with Three.js and powered by Vite. It features realistic planet models, smooth camera transitions, and interactive controls, all wrapped in a sleek, transparent UI that offers an immersive space-themed experience.",
+      gitLink: "https://github.com/brendo0npillay/planet-view",
+      link: "https://planet-view.onrender.com/",
+      img: holder,
+    },
   ];
   return (
     <div className="projectContainer">
@@ -60,7 +69,12 @@ export default function Projects() {
               <Card.Title>{item.name}</Card.Title>
               <Card.Text>{item.description}</Card.Text>
               <div className="buttons">
-                <Button className="butn" href={item.link} target="_blank" variant="primary">
+                <Button
+                  className="butn"
+                  href={item.link}
+                  target="_blank"
+                  variant="primary"
+                >
                   View Site
                 </Button>
                 <Button
