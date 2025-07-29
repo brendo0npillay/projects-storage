@@ -56,6 +56,13 @@ export default function Projects() {
       link: "https://planet-view.onrender.com/",
       img: holder,
     },
+    {
+      name: "Image Generator",
+      description: "An AI-powered image generator that creates visuals from text prompts in real-time. Built with vanilla JavaScript and a clean UI, it features prompt history, instant previews, and dynamic feedback—delivering a smooth and interactive creative experience for users.",
+      gitLink: "https://github.com/brendo0npillay/ai-image-gen",
+      link: "https://ai-image-gen-8vpr.onrender.com",
+      img: holder
+    }
   ];
   return (
     <div className="projectContainer">
