@@ -4,6 +4,12 @@ import gitLogo from "../assets/github-logo-png_seeklogo-273183-removebg-preview.
 export default function GitProjects() {
   const projects = [
     {
+      name: "AI ChatBot V2(heavily improved)",
+      description:
+        "An AI-powered browser chatbot featuring real-time responses and smooth message rendering. Built with modular code structure and efficient state handling for responsive interactions.",
+      link: "https://github.com/brendo0npillay/new-chatbot",
+    },
+    {
       name: "Node and SQL project",
       description:
         "A full-stack app using Node.js, Express, PostgreSQL, and Docker to manage visitor records. It features a static form, data storage, CRUD operations, and confirmation pages rendered with Pug.",
@@ -43,8 +49,8 @@ export default function GitProjects() {
       name: "AI ChatBot",
       description:
         "A responsive web app that lets users chat with an AI using Groq's API. Features clean UI, real-time responses, and simple JavaScript integration for smooth API communication.",
-      link: "https://github.com/brendo0npillay/ai-chat"
-      },
+      link: "https://github.com/brendo0npillay/ai-chat",
+    },
   ];
   return (
     <div className="projectContainer">
