@@ -152,3 +152,43 @@
   row-gap: 60px;
 }
 }
+
+
+.projectImage {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #111827;
+}
+
+.projectThumb {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.35s ease;
+}
+
+.projectCard:hover .projectThumb {
+  transform: scale(1.04);
+}
+
+.thumbFloat {
+  animation: thumb-float 3s ease-in-out infinite;
+}
+
+@keyframes thumb-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .projectThumb,
+  .thumbFloat {
+    animation: none;
+    transition: none;
+  }
+}
